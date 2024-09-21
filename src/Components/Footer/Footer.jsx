@@ -1,12 +1,13 @@
 import React from 'react'
 import './Footer.css'
+import logo from "/logo.png"
 
 const Footer = () => {
   return (
     <div className='footer'>
       <div className="footer-top">
         <div className="footer-top-left">
-          <img className='logo' src="/logo.png" alt="" />
+          <img className='logo' src={logo}  alt="" />
           <p> I specialize in designing websites that are both beautiful and effective. I use my skills and build websites that are easy to use and help businesses succeed.</p>
         </div>
         <div className="footer-top-right">

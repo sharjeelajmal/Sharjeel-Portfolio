@@ -1,5 +1,9 @@
 import React from 'react'
 import './Contact.css'
+import theme_pattern from "/theme_pattern.svg"
+import mail_icon from "/mail_icon.svg"
+import call_icon from "/call_icon.svg"
+import location_icon from "/location_icon.svg" 
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -39,7 +43,7 @@ const Contact = () => {
     <div id='contact' className='contact'>
       <div className="contact-title">
         <h1>Get In Touch</h1>
-        <img src="/theme_pattern.svg" alt="" />
+        <img src={theme_pattern} alt="" />
       </div>
       <div className="contact-section">
         <div className="contact-left">
@@ -51,13 +55,13 @@ Have a project in mind? Let's discuss your goals.
 </p>
           <div className="contact-details">
             <div className="contact-detail">
-            <img src="/mail_icon.svg" alt="" /><p>sharjeelajmalg786@gmail.com</p>
+            <img src={mail_icon } alt="" /><p>sharjeelajmalg786@gmail.com</p>
             </div>
             <div className="contact-detail">
-            <img src="/call_icon.svg" alt="" /><p>+92 309 6530 326</p>
+            <img src={call_icon}  alt="" /><p>+92 309 6530 326</p>
             </div>
             <div className="contact-detail">
-           <img src="/location_icon.svg" alt="" /><p>Fareed Town, Sahiwal</p>
+           <img src={location_icon} alt="" /><p>Fareed Town, Sahiwal</p>
             </div>
           </div>
         </div>

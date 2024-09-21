@@ -1,7 +1,7 @@
-
 import React from 'react'
 import './Services.css'
 import Services_Data from '../../assets/services_data'
+import theme_pattern from "/theme_pattern.svg"
 
 
 const Services = () => {
@@ -9,7 +9,7 @@ const Services = () => {
     <div id='services' className='services'>
       <div className="services-title">
         <h1>My Services</h1>
-        <img src="/theme_pattern.svg" alt="" />
+        <img src={theme_pattern} alt="" />
       </div>
       <div className="services-container">
         {Services_Data.map((service,index)=>{
