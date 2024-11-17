@@ -78,9 +78,30 @@
     height: 100%;
   }
   .mywork-showmore{
-    padding: 20px 40px;
-    font-size: 18px;
+    padding: 18px 20px;
+    font-size: 15px;
     margin: 50px auto;
     cursor: pointer;
+  }
+}
+
+@media(max-width:480px){
+  .mywork-title h1{
+  font-size: 40px;
+  
+  }
+  .mywork-title img{
+    height: 40px;
+   
+  }
+  .mywork-container{
+    margin-left: -30px;
+    grid-template-columns: 50% 50% ;
+    gap: 20;
+  }
+  .mywork-container img{
+    width: 170px;
+    height: 120px;
+
   }
 }

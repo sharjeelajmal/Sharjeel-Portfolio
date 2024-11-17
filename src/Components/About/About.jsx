@@ -16,15 +16,16 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>As a passionate web developer, I love creating innovative and user-friendly websites that solve real-world problems.
+            <p>As a passionate Full-Stack MERN Developer, I thrive on creating innovative, user-friendly, and scalable web solutions that address real-world challenges. With a solid foundation in MERN Stack, 
             </p>
-            <p>With a strong foundation in HTML, CSS, JavaScript, and React, I specialize in building responsive and high-performing web applications.</p>
+            <p>I specialize in developing responsive and high-performance web applications, delivering seamless user experiences across devices.</p>
           </div>
           <div className="about-skills">
             <div className="about-skill"><p>HTML & CSS</p> <hr style={{width:"50%"}} /></div>
-            <div className="about-skill"><p>React JS</p> <hr style={{width:"60%"}} /></div>
-            <div className="about-skill"><p>JavaScript</p> <hr style={{width:"70%"}} /></div>
+            <div className="about-skill"><p>JavaScript</p> <hr style={{width:"60%"}} /></div>
+            <div className="about-skill"><p>React JS</p> <hr style={{width:"70%"}} /></div>
             <div className="about-skill"><p>Next JS</p> <hr style={{width:"50%"}} /></div>
+            <div className="about-skill"><p>Node JS</p> <hr style={{width:"70%"}} /></div>
           </div>
         </div>
       </div>

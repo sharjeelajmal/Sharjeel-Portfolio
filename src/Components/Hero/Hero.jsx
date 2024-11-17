@@ -5,10 +5,10 @@ import profile from "/profile.jpg"
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="hero" className="hero">
       <img className="hero-img" src={profile} alt="" />
       <h1>
-        <span>I'm Sharjeel Ajmal,</span> Complete Website Developer
+        <span>I'm Sharjeel Ajmal,</span> Full Stack Website Developer
       </h1>
       <p>
         I specialize in designing websites that are both beautiful and

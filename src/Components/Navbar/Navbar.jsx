@@ -25,7 +25,7 @@ const Navbar = () => {
       <img onClick={openMenu} src={menu_open} alt="" className='nav-mob-open' />
       <ul ref={menuRef}  className="nav-menu">
         <img onClick={closeMenu} src={menu_close} alt="" className="nav-mob-close" />
-        <li> <AnchorLink className='anchor-link'  href='#home'> <p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==="home"?<img src={nav_underline} alt=''/>:<></> }</li>
+        <li> <AnchorLink className='anchor-link'  href='#hero'> <p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==="home"?<img src={nav_underline} alt=''/>:<></> }</li>
         <li><AnchorLink className='anchor-link' offset={50} href='#about'> <p  onClick={()=>setMenu("about")}>About Me</p></AnchorLink>{menu==="about"?<img src={nav_underline} alt=''/>:<></> }</li>
         <li><AnchorLink className='anchor-link' offset={50} href='#services'> <p onClick={()=>setMenu("services")}>Services</p></AnchorLink>{menu==="services"?<img src={nav_underline} alt=''/>:<></> }</li>
         <li><AnchorLink className='anchor-link' offset={50} href='#work'> <p onClick={()=>setMenu("work")}>Portfolio</p></AnchorLink>{menu==="work"?<img src={nav_underline} alt=''/>:<></> }</li>

@@ -1,58 +1,87 @@
-.navbar{
+.navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 20px 170px;
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1f0016;
+  border-radius: 10px;
 }
-.navbar .logo{
+
+.navbar .logo {
   height: 80px;
 }
-.nav-menu{
+
+.nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 60px;
   font-size: 20px;
 }
-.nav-connect{
+
+.nav-connect {
   padding: 20px 40px;
   border-radius: 50px;
-  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%) ;
+  background: -webkit-linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
   cursor: pointer;
   transition: 0.5s;
 }
-.nav-connect:hover{
+
+.nav-connect:hover {
   transform: scale(1.05);
 }
-.nav-menu li{
+
+.nav-menu li {
   display: flex;
   flex-direction: column;
-
   cursor: pointer;
 }
-.nav-menu li img{
+
+.nav-menu li img {
   display: flex;
   margin: auto;
 }
-.anchor-link{
+
+.anchor-link {
   text-decoration: none;
   color: white;
 }
-.nav-mob-close{
-  display: none;
-}
-.nav-mob-open{
+
+.nav-mob-close {
   display: none;
 }
 
-@media (max-width:768px){
-  .navbar{
-   margin: 20px 50px;
+.nav-mob-open {
+  display: none;
+}
+
+@media (max-width: 1024px){
+  .nav-menu {
+    gap: 40px;
+    font-size: 18px;
   }
-  .nav-connect{
+
+  .nav-connect {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px){
+  .navbar {
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .nav-connect {
     display: none;
   }
-   .nav-mob-open{
+  .nav-mob-open{
     display: block;
     position: fixed;
     right: 30px;
@@ -84,6 +113,29 @@
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
+ 
   }
 }
- 
+
+
+@media (max-width: 480px) {
+  .navbar{
+    width: 100%;
+  } 
+  .nav-menu li {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .nav-mob-open {
+    width: 20px;
+  }
+  .nav-mob-close {
+    margin-right: 250px;
+  }
+  
+  .nav-mob-open {
+    margin-right: 50px;
+  }
+  
+}
